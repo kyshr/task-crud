@@ -23,7 +23,7 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-//Passport
+//Passport configuration
 app.use(passport.initialize());
 passport.use(jwtPassportMiddleware);
 passport.use("google", googleOAuth);
